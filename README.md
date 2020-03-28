@@ -8,6 +8,8 @@ Documentation site for [Aiicy](https://aiicy.org/)
 ```bash
 git clone https://github.com/Aiicy/aiicy-docs.git
 
+cd aiicy-docs
+
 # init submodule
 git submodule init
 
