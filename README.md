@@ -13,10 +13,6 @@ git submodule init
 
 # pull submodule
 git submodule update
-
-# submodule checkout to master branch
-
-cd public && git checkout master
 ```
 
 ## View
