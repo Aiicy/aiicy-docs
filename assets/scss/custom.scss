@@ -1,0 +1,100 @@
+/* Override margins for figures. */
+figure {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+figure img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make homepage section padding compact. */
+.home-section {
+  padding: 60px 0 60px 0;
+}
+
+/* Hero title: use brand color and bigger font. */
+.hero-title {
+  color: #2962ff;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+/* Button shortcode */
+.reference {
+  background: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #EFF0F2;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  text-decoration: none !important;
+  transition: border-color 0.25s linear;
+  display: flex;
+  margin: 32px 0px;
+  padding: 16px;
+  user-select: none;
+}
+
+.dark .reference {
+  background-color: #44475a;
+}
+
+.reference:hover {
+  border-color: #2962ff;
+}
+
+.reference .name {
+  color: #2962ff;
+  flex: 1 1 auto;
+  font-size: 18px;
+}
+.reference .path {
+  color: #939ba9;
+  font-size: 14px;
+}
+.reference .icon {
+  margin-right: 16px;
+  background: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%20%3Cpath%20fill%3D%22%232364d2%22%20d%3D%22M4%2C11V13H16L10.5%2C18.5L11.92%2C19.92L19.84%2C12L11.92%2C4.08L10.5%2C5.5L16%2C11H4Z%22%20%2F%3E%0A%3C%2Fsvg%3E") no-repeat center center;
+  width: 24px;
+}
+/* Docs: custom TOC foot. */
+
+.connect-widget {
+  margin-top: 30px;
+  font-size: 0.7rem;
+}
+
+.connect-widget ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+/* Center tweets. */
+
+#tweets iframe {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* widget */
+
+.btn-toolbar {
+  justify-content: center;
+}
+
+/* section headers */
+
+div.universal-wrapper.pt-3 h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.page-subtitle {
+  text-align: center;
+}
+
+canvas{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+}

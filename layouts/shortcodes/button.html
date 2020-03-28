@@ -1,0 +1,5 @@
+<a href="{{ .Get "href" | relref .Page }}" class="reference">
+  <span class="icon"></span>
+  <span class="name">{{ .Inner }}</span>
+  <span class="path">{{ .Get "href" | relref .Page }}</span>
+</a>

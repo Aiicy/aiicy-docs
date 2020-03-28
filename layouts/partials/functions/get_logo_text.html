@@ -1,0 +1,21 @@
+{{/* Function to get logo_text image. */}}
+{{/* Inputs: constraint: max_height/fit (str); size (int) */}}
+{{/* Output: resource (obj) */}}
+
+{{/* Workaround fact Hugo does not support GetMatch in assets dir */}}
+{{/* Hugo doesn't support image ops on SVG: https://discourse.gohugo.io/t/ho-do-i-convert-a-generic-resource-to-image-resource/22570/4 */}}
+{{ $logo_text := resources.Get "images/logo_text.png" | default (resources.Get "images/logo_text.svg") }}
+{{ $logo_text_proc := $logo_text }}
+
+{{/* If the type of image can be resized by Hugo, resize it given a `.size` argument to the function. */}}
+{{ if resources.Get "images/logo_text.png" }}
+  {{ if eq .constraint "max_height" }}
+    {{/* Resize logo_text to fit specified max height. */}}
+    {{ $logo_text_proc = ($logo_text.Resize (printf "x%s" (string .size))) }}
+  {{ else }}
+    {{/* Constrain logo_text to fit within specified dimensions. */}}
+    {{ $logo_text_proc = ($logo_text.Fit (printf "%sx%s" (string .size) (string .size))) }}
+  {{ end }}
+{{ end }}
+
+{{ return $logo_text_proc }}

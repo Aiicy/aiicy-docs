@@ -1,0 +1,54 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+#[[main]]
+#  pre = "<i class=\"fas fa-home pr-1\" style=\"color: #00d1b2;\"></i>"
+#  name = "Home"
+#  url = "#hero"
+#  weight = 5
+
+[[main]]
+  # pre = "<i class=\"fas fa-book pr-1\"></i>"
+  name = "Documention"
+  url = ""
+  weight = 2
+
+[[main]]
+  name = "<i class=\"fab fa-github-alt\" style=\"font-size: 1rem; line-height: 1.25\"></i>"
+  post = ""
+  url = "https://github.com/aiicy/aiicy"
+  weight = 6
+
+# Documentation
+
+[[docs]]
+  name = "Installation"
+  weight = 10
+  identifier = "setup"
+
+[[docs]]
+  name = "Dataset"
+  weight = 20
+  identifier = "dataset"
+
+[[docs]]
+  name = "Run"
+  weight = 30
+  identifier = "run"
+
+[[docs]]
+  name = "Guidance"
+  weight = 40
+  identifier = "guidance"
+
+[[docs]]
+  name = "Advanced"
+  weight = 50
+  identifier = "advanced"
+
+[[docs]]
+  name = "Design"
+  weight = 60
+  identifier = "design"
