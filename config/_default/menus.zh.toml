@@ -52,3 +52,8 @@
   name = "设计"
   weight = 60
   identifier = "design"
+
+[[docs]]
+  name = "贡献指南"
+  weight = 70
+  identifier = "contributing"
